@@ -1,0 +1,29 @@
+snippet init
+#!/usr/bin/env python3
+
+import time
+
+def main():
+    pass
+
+if __name__ == '__main__':
+    s = time.perf_counter()
+    main()
+    elapsed = time.perf_counter() - s
+endsnippet
+
+snippet unit
+#!/usr/bin/env python3
+
+import unittest
+import {module}
+
+class {module}_test(unittest.TestCase):
+    
+    def test_{functionName}(self):
+	self assertEqual({module}.{function}(), {expected})
+
+
+if __name__ == '__main__':
+    unittest.main()
+endsnippet

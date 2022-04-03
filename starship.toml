@@ -1,0 +1,48 @@
+[character]
+success_symbol = "[❯](bold blue)"
+error_symbol = "[✖](bold red)"
+vicmd_symbol = "[V](bold green) "
+
+[cmd_duration]
+disabled = true
+
+#GCP
+[gcloud]
+style = "bold blue"
+format = "on [$project ($region)]($style) "
+disabled = true
+
+#Python
+[python]
+style = "bold green"
+format = "[Python $version ($virtualenv)]($style) "
+
+#Git
+[git_branch]
+style = "bold blue"
+format = "on [$symbol$branch ]($style)"
+
+[git_metrics]
+disabled = false
+
+#Directory
+[directory]
+truncation_length = 2
+
+#Lua
+[lua]
+style = "bold blue"
+format = "[Lua $version]($style) "
+
+#NodeJS
+[nodejs]
+style = "bold yellow"
+format = "[$symbol$version]($style)"
+
+#Rust
+[rust]
+style = "bold red"
+format = "[Rust $version]($style)"
+
+[package]
+disabled = true
